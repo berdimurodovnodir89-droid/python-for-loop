@@ -1,7 +1,3 @@
-n = int(input())
-teskari = 0
+n = input("Sonni kiriting: ")
 
-for digit in str(n)[::-1]:
-    teskari = teskari * 10 + int(digit)
-
-print(teskari)
+print(n[::-1])
