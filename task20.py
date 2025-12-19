@@ -1,13 +1,18 @@
-ball = int(input(f' Ball 1:'))
-max_ball = ball
- 
-for i in range(2,6) :
-    ball = ball = int(input(f' Ball 2:'))
+n  = int(input(f'son :'))
 
-ball = int(input(f' Ball 2:')) 
-max_ball = ball
-if ball > max_ball :
-        max_ball = ball
+son = float(input('son 1 :'))
+    
+min_son = son
+max_son = son
 
-print(max_ball)
-  
+for i in range(2,n+1) :
+   son = float(input(f'son {i}:'))
+    
+   if son > max_son :
+    max_son = son
+   if son < min_son :
+    min_son = son
+
+avg = (max_son + min_son)/2
+
+print(avg)
